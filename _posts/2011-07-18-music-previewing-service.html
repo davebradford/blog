@@ -1,0 +1,44 @@
+--- 
+published: true
+title: Music Previewing Service
+tags: 
+- api
+- apple
+- itunes
+- itunes search api
+- music
+- previews
+- streaming
+type: post
+layout: post
+---
+
+<p>I've recently been trying to do something with music previews, displaying a page with a list of songs and include short music
+previews for each song.</p>
+
+<p>After some research on Google I didn't find any services which provide anything like what I wanted. Amazon provide a <a
+title="Amazon Music Widget" href="https://widgets.amazon.co.uk/Widget-Source/">music widget thing</a> which let's you build a little
+bit of java script that follows a playlist but not really what I had in mind.</p>
+
+<p>I was surprised that this would be so difficult to find, in my head I imagined being able to provide something like the 30 second
+previews Apple give you on their iTunes Store. Amazon provides similar previews which is purely a MP3 file however I don't think
+it's an easy thing to go in a pull out without a bit of hacking away.</p>
+
+<p>Maybe the key here is not waste time building  service which provides music previews but instead build a service which offers music
+previews!</p>
+
+<p>Am I missing something here?</p>
+
+<p>UPDATE:</p>
+
+<p>Turns out I completely missed Apple and their <a title="iTunes Search API"
+href="http://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html">iTunes Search
+API</a>, this will return JSON formatted results and allows you to use it for pictures, video/music previews and whole lot more,
+their documentation is pretty good very easy to understand and implement.</p>
+
+<p>For example - search iTunes store of all content by "The XX" would be:</p>
+
+<p><a title="Search for all content on iTunes by The XX"
+href="http://itunes.apple.com/search?term=the+xx">http://itunes.apple.com/search?term=the+xx</a></p>
+
+<p>You may then use extra terms in the url to specific media type, limit etc.</p>

@@ -1,0 +1,48 @@
+--- 
+published: true
+title: System Serial Number In Windows
+tags: 
+- make
+- script
+- serial
+- server
+- support
+- vbs
+- windows
+type: post
+layout: post
+category: blog
+---
+
+<p>A few weeks ago I was on the phone to tech support about a problematic server, the first question they asked me was, "Can we have the make and serial
+number of your product please sir?", "ermm" I replied, I guess I could have taken a look on the box for the information, however this server was 70
+miles away from where I was sitting. On a Mac OSX system you can find the serial number using "About My Mac", however on a Windows System this
+requires a little more effort, but it is possible.</p>
+
+
+
+<p>This prompted me to brush off some of my VBS scripting I'd learn at college and come up with a simple solution to this problem. The answer? A script
+which will pop-up your make and model number as long as you can remote to the device. I've not found a problem with this script on any Windows system
+yet, this script takes advantage of WMI services from the BIOS. If you want to have a play with VBS scripting I've found Microsoft MSDN a great
+resource, you can extend this script to display more information, if you wish.</p>
+
+<p><a href="http://msdn.microsoft.com/en-us/library/aa394587(VS.85).aspx">http://msdn.microsoft.com/en-us/library/aa394587(VS.85).aspx</a></p>
+
+<p>To get the script setup and working on your machine copy and paste the code listed below into a blank text file. Save this rename to something like
+<em>serverinfo.vbs</em>, then all you will need to do is run this on the device which you need the information from, and you will will recieve a
+series of popups. I was using this to dump to a text file but I found the popups easier when I need this information quickly, however this script
+should have everything you need to get you started.</p>
+
+<blockquote> 
+<em>strComputer = "."</em> 
+<em>Set objWMIService = GetObject("winmgmts:" _</em> 
+<em>&amp; "{impersonationLevel=impersonate}!\\" &amp;
+strComputer &amp; "\root\cimv2")</em>
+<em>Set colBIOS = objWMIService.ExecQuery _</em>
+<em>("Select * from Win32_BIOS")</em>
+<em>For each objBIOS in colBIOS</em>
+<em>Wscript.Echo "Got a pen ready? Make and Serial will follow."</em>
+<em>Wscript.Echo objBIOS.Manufacturer</em>
+<em>Wscript.Echo objBIOS.SerialNumber</em>
+<em>Next</em>
+</blockquote>

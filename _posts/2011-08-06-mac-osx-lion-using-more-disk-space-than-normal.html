@@ -1,0 +1,27 @@
+--- 
+published: true
+title: Mac OSX Lion Using More Disk Space Than Normal?
+tags: 
+- backups
+- hard drive
+- laptop
+- lion
+- mac
+- macbook
+- osx
+- time machine
+type: post
+layout: post
+---
+
+<p>Since I upgraded my MacBook to Lion (Apple's new version of OSX) I've noticed a few days ago I've been loosing hard drive space
+quite rapidly? After searching around the Apple community forums I noticed a few articles which pointed toward Time Machine backups,
+turns out Lion will backup using the local disk if it cannot find it's dedicated drive, a little bit of a pain. Since I'm a laptop
+user I find myself away from my external drives a fair bit.</p>
+
+<p>There is a command you can use in the terminal to stop this from happening:</p>
+
+<blockquote>sudo tmutil disablelocal</blockquote>
+
+<p>This will completely stop Time Machine from using your local disk and return  your drive usage back to normal. Running this command
+gave me 2GB of space back after a restart. It looks like this only happens on Apple portable computers.</p>

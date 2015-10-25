@@ -1,0 +1,10 @@
+permalink:        /:categories/:title
+
+sass:
+  sass_dir:   css
+  style:      compressed
+
+exclude: ["config", "Capfile", "Dockerfile", "Gemfile", "Gemfile.lock"]
+
+host: 0.0.0.0
+port: 4000

@@ -1,0 +1,23 @@
+---
+layout: nil
+title: RSS
+---
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dave Bradford</title>
+  <link href="http://davebradford.com/feed.xml" rel="self" />
+  <link href="http://davebradford.com/" />
+  <updated>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
+  <id>http://davebradford.com</id>
+  <author>
+    <name>Dave Bradford</name>
+  </author>
+  {% for post in site.categories.blog limit: 20 %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="http://davebradford.com{{ post.url }}"/>
+    <updated>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
+    <id>http://davebradford.com{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>

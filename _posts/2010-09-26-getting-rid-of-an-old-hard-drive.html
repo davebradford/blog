@@ -1,0 +1,38 @@
+--- 
+published: true
+title: Getting Rid Of An Old Hard Drive
+tags: 
+- data protection
+- dban
+- erase
+- hard drive
+- privacy
+- security
+- tools
+type: post
+layout: post
+category: blog
+---
+
+<p>Like most geeks, my house is full of old hard drives of various capacity, storage is very cheap these days. In a world where data
+privacy is an ever increasing issue and money is short you might decide that one day you want to either get rid of these old drives
+or sell them either over the internet or to your mate who's starting <a title="Weekend Project – FreeNAS as a Home Media Server"
+href="http://techphooey.com/2010/07/weekend-project-freenas-as-a-home-media-server/" target="_self">a freenas project</a>.</p>
+
+<p>Whatever you decide to do, it's important to make sure this drive leaves your procession with no possible way of accessing the old
+data. Of course the best way is to completely destroy the drive physically, however we all know that most people aren't going to
+bother, if you really have to pass this drive on or sell it you should at least make sure you try out DBAN to remove any traces.</p>
+
+<p>DBAN (Darik's Boot and Nuke) it's a boot disk which will wipe most hard drives using some hardcore data wiping technology, including
+some American Department of Defence techniques to make sure your data is really gone. When you delete data from a hard drive in a
+conventional way, there are still ways of recovering this data quite easily. DBAN will pass every section of the drive multiple
+times to remove references to the old files, the more passes the better.</p>
+
+<p>Head over to the project page <a href="http://www.dban.org/">http://www.dban.org/</a>, download the boot-able CD then burn the image
+using your favourite image burning application and your ready to go.</p>
+
+<p>DBAN provides a few different options. I'm a massive fan of DoD 5220.22-M wipe, but it will take a little while depending on the size of 
+your drive.</p>
+
+<p>Each option will give you an idea on the type of security you will get from the erase. This is a great tool for anyone concerned
+about data piracy, which should be everyone!</p>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }} - Dave Bradford</title>
+	<link href="feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml">
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+	<div class="container clearfix">
+		<div class="grid_12 omega">
+			<header>
+				<h1><a href="/"><span>Dave Bradford</span></a></h1>
+				<h2>Developer and picture taker.</h2>
+				{% include nav.html %}
+				</header>
+		</div>
+		{{ content }}
+		<div class="grid_12 omega">
+			<footer>
+		  	<p>Follow <a href="http://twitter.com/davebradford">@davebradford</a> on Twitter or grab the <a href="/feed.xml">feed</a>.</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
