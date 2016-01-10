@@ -3,4 +3,4 @@ layout: default
 title: Home
 ---
 
-# Hey! I'm Dave!
+# Hello! I'm Dave, thank you for popping by.
