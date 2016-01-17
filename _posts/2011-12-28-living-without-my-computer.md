@@ -12,6 +12,7 @@ tags:
 - spotify
 type: post
 layout: post
+category: blog
 ---
 
 Picture this two weeks ago, it's a cold Saturday morning. I get home after spending the night around my girlfriends, power up my MacBook Pro, went downstairs to make a cup of tea and noticed the screen was completely black? After a bit of troubleshooting it wasn't just the screen, it seems to have completely failed posting at all I mean it turns on but other than that there is no chime no nothing! Wow this hit me pretty hard I mean my main machine was busted just shy of 4 years old.

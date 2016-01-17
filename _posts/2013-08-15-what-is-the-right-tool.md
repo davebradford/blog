@@ -5,6 +5,7 @@ tags:
 type: post
 layout: post
 published: true
+category: blog
 ---
 
 Has anyone ever looked down on you because you don't have the *right* tools for the job?

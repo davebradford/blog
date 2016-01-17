@@ -6,6 +6,7 @@ tags:
 type: post
 layout: post
 published: true
+category: blog
 ---
 
 The biggest and most valuable piece of advice I've received in the last year is just to start.

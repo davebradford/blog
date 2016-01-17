@@ -8,6 +8,7 @@ tags:
 type: post
 layout: post
 published: ture
+category: blog
 ---
 
 Two months ago I moved this website over to the fine folks at Digital Ocean, who offer SSD based VPS servers.

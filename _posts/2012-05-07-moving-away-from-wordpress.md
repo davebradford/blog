@@ -8,6 +8,7 @@ tags:
 - wordpress
 type: post
 layout: post
+category: blog
 ---
 
 Since as long as I have been on the internet I've been playing around with [Wordpress](http://wordpress.org/), they have two versions a completely hosted version and an open source version which can be installed on a web server, PHP and a database of sorts.
